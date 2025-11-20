@@ -20,6 +20,7 @@ async def validate_workflow(
     cc_emails: Optional[str] = Form(None),    # comma-separated
     bcc_emails: Optional[str] = Form(None),   # comma-separated
 ):
+    print(file)
     print(to_emails)
 
     # ===== READ FILE =====

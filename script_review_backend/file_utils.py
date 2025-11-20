@@ -7,7 +7,7 @@ def detect_tool_type(filename: str, content:str) -> str:
 
     if name.endswith(".xaml"): 
         return "UiPath"
-    elif name.endswith(".bprelease") or name.endwith(".bpprocess") or name.endswith(".bpobject"):
+    elif name.endswith(".bprelease"): # or name.endwith(".bpprocess") or name.endswith(".bpobject")
         return "Blue Prism"
 
     return "Incorrect file"
